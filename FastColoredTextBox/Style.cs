@@ -118,12 +118,12 @@ namespace FastColoredTextBoxNS
             Line line = range.tb[range.Start.iLine];
             float dx = range.tb.CharWidth;
             float y = position.Y + range.tb.LineInterval / 2;
-            float x = position.X - range.tb.CharWidth/3;
+            float x = (range.tb.RightToLeft == System.Windows.Forms.RightToLeft.Yes) ? position.X : position.X - range.tb.CharWidth / 3;
 
             if(ForeBrush == null)
                 ForeBrush = new SolidBrush(range.tb.ForeColor);
 
-            //IME mode
+            //IME mode, What to do for right to left languages?
             if (range.tb.ImeAllowed)
             for (int i = range.Start.iChar; i < range.End.iChar; i++)
             {
@@ -145,12 +145,12 @@ namespace FastColoredTextBoxNS
             }
             else
             //classic mode 
-            for (int i = range.Start.iChar; i < range.End.iChar; i++)
-            {
+            //for (int i = range.Start.iChar; i < range.End.iChar; i++)
+            //{
                 //draw char
-                gr.DrawString(line[i].c.ToString(), f, ForeBrush, x, y, stringFormat);
-                x += dx;
-            }
+                if (range.tb.RightToLeft == System.Windows.Forms.RightToLeft.Yes) stringFormat.FormatFlags |= StringFormatFlags.DirectionRightToLeft;
+                gr.DrawString(range.Text, f, ForeBrush, x, y, stringFormat);
+            //}
             //
             f.Dispose();
         }

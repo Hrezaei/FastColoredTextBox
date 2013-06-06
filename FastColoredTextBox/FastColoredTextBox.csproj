@@ -96,6 +96,7 @@
     <Compile Include="UnfocusablePanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Utility.cs" />
     <Compile Include="VisualMarker.cs" />
   </ItemGroup>
   <ItemGroup>

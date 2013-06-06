@@ -839,6 +839,6 @@ namespace FastColoredTextBoxNS
     /// </summary>
     public enum Language
     {
-        Custom, CSharp, VB, HTML, SQL, PHP, JS
+        Custom, CSharp, VB, HTML, SQL, PHP, JS, Parsis
     }
 }

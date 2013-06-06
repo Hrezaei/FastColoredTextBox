@@ -83,6 +83,18 @@
     <Compile Include="MacrosSample.Designer.cs">
       <DependentUpon>MacrosSample.cs</DependentUpon>
     </Compile>
+    <Compile Include="ParsisSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParsisSample.Designer.cs">
+      <DependentUpon>ParsisSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PowerfulSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PowerfulSample.Designer.cs">
+      <DependentUpon>PowerfulSample.cs</DependentUpon>
+    </Compile>
     <Compile Include="PredefinedStylesSample.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,12 +233,6 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PowerfulSample.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PowerfulSample.Designer.cs">
-      <DependentUpon>PowerfulSample.cs</DependentUpon>
-    </Compile>
     <Compile Include="BookmarksSample.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,6 +259,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MacrosSample.resx">
       <DependentUpon>MacrosSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParsisSample.resx">
+      <DependentUpon>ParsisSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PowerfulSample.resx">
+      <DependentUpon>PowerfulSample.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PredefinedStylesSample.resx">
       <DependentUpon>PredefinedStylesSample.cs</DependentUpon>
@@ -323,9 +335,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PowerfulSample.resx">
-      <DependentUpon>PowerfulSample.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BookmarksSample.resx">
       <DependentUpon>BookmarksSample.cs</DependentUpon>

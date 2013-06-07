@@ -10,3 +10,6 @@ It has such settings as foreground color, font style, background color which can
 ![Fast Colored TextBox](http://www.codeproject.com/KB/edit/FastColoredTextBox_/fastcoloredtextbox2.png)
 
 More details http://www.codeproject.com/Articles/161871/Fast-Colored-TextBox-for-syntax-highlighting
+
+Right to Left support
+This fork tries to add right to left support for rtl languages such as Parsis(c).
